@@ -1,0 +1,16 @@
+
+/// Provides the relative font-size
+/// @param {number} $size
+/// 	Relative size to base 0.1
+@mixin font-size-mixin($size: 16) {
+	font-size: ($size * 0.1) + rem;
+}
+
+@mixin paragraph-color-mixin($option: 'light')
+{
+	@if $option == 'light' {
+		color: $color-dark;
+	} @else {
+		color: $color-white;
+	}
+}
